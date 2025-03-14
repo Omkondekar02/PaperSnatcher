@@ -1,85 +1,29 @@
-# PaperSnatcher
-# Research Paper Fetcher
+# Get Papers List
 
-## Overview
-This Python program fetches research papers from PubMed based on a user-specified query. It filters the results to include only papers where at least one author is affiliated with a pharmaceutical or biotech company and saves the filtered data as a CSV file.
+This Python program fetches research papers from PubMed based on a user query. It filters the papers based on whether at least one author is affiliated with a pharmaceutical or biotech company, and returns the results in a CSV file.
 
 ## Features
-- Fetches papers using the PubMed API
-- Supports full PubMed query syntax
-- Filters papers based on company affiliations
-- Saves results as a CSV file with relevant details
-- Command-line interface with various options
 
-## Installation
-This project uses **Poetry** for dependency management.
+- Fetch research papers from PubMed API.
+- Filter results to identify authors affiliated with pharmaceutical or biotech companies.
+- Output the filtered results to a CSV file with the following columns:
+  - PubmedID: Unique identifier for the paper.
+  - Title: Title of the paper.
+  - Publication Date: Date the paper was published.
+  - Non-academic Author(s): Names of authors affiliated with non-academic institutions.
+  - Company Affiliation(s): Names of pharmaceutical/biotech companies.
+  - Corresponding Author Email: Email address of the corresponding author.
 
-### Prerequisites
-Ensure you have **Python 3.8+** installed on your system.
+## Requirements
 
-### Setup
-1. Clone this repository:
-   ```sh
-   git clone https://github.com/yourusername/research-paper-fetcher.git
-   cd research-paper-fetcher
-   ```
-2. Install dependencies using Poetry:
-   ```sh
-   poetry install
-   ```
-3. Activate the virtual environment:
-   ```sh
-   poetry shell
-   ```
+- Python 3.13 or higher
+- Poetry (for dependency management)
+- Dependencies will be automatically installed via `poetry install`.
 
-## Usage
-The program is executed as a command-line script with the following options:
+## Setup Instructions
 
-```sh
-python fetchpaper.py -q "your search query" -f output.csv
-```
-
-### Command-Line Arguments
-| Option  | Description |
-|---------|-------------|
-| `-h` or `--help` | Display usage instructions |
-| `-d` or `--debug` | Enable debug mode to print additional logs |
-| `-f` or `--file` | Specify the output filename (default: console output) |
-
-## Output Format
-The script generates a CSV file with the following columns:
-
-| PubMedID | Title | Publication Date | Non-academic Authors | Company Affiliation(s) | Corresponding Author Email |
-|----------|-------|------------------|-----------------------|----------------------|---------------------------|
-| 40080018 | Sample Title | 2024-01-10 | John Doe | Biotech Ltd | john.doe@biotech.com |
-
-## Code Structure
-- `fetchpaper.py`: Main script that fetches and processes research papers.
-- `utils.py`: Contains helper functions for API requests and filtering.
-- `requirements.txt`: List of dependencies.
-- `README.md`: Documentation file.
-
-## Development
-To contribute or modify the project:
-1. Create a new branch:
-   ```sh
-   git checkout -b feature-branch
-   ```
-2. Make your changes and commit them:
-   ```sh
-   git commit -m "Add new feature"
-   ```
-3. Push to GitHub and create a pull request:
-   ```sh
-   git push origin feature-branch
-   ```
-
-## Tools & Technologies Used
-- **Python 3.8+**
-- **Requests** for API calls
-- **CSV** for file handling
-- **Poetry** for dependency management
-
-
-
-
+1. Clone this repository to your local machine.
+   
+   ```bash
+   git clone https://github.com/your-username/get-papers-list.git
+   cd get-papers-list

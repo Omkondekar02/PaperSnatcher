@@ -80,9 +80,6 @@ To contribute or modify the project:
 - **CSV** for file handling
 - **Poetry** for dependency management
 
-## License
-This project is licensed under the MIT License.
 
----
-Feel free to modify and update as needed!
+
 

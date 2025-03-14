@@ -22,8 +22,17 @@ This Python program fetches research papers from PubMed based on a user query. I
 
 ## Setup Instructions
 
+
 1. Clone this repository to your local machine.
    
    ```bash
    git clone https://github.com/your-username/get-papers-list.git
    cd get-papers-list
+## LLM Assistance
+This project was developed with the assistance of an LLM (ChatGPT). The model was used for:
+- Debugging API requests and response handling.
+- Improving XML parsing for extracting correct metadata.
+- Optimizing CSV data storage.
+- Enhancing error handling and performance.
+
+The conversation covered issues such as API rate limits, missing data handling, and CSV formatting.
